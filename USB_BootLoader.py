@@ -42,7 +42,7 @@ def main():
 			print vermelho+t+verde+'Aguarde o Pendrive está sendo Bootado...'
 			process = os.popen(comand)
 			results = str(process.read())
-			return vermelho+t+azulresults
+			return vermelho+t+azul+results
 		elif live == 'y' or live == 'Y':
 			part = raw_input(vermelho+t+azul+'Digite o Diretorio da Partição > ')
 			print('')
@@ -51,7 +51,7 @@ def main():
 			print vermelho+t+verde+'Aguarde o Pendrive está sendo Bootado...'
 			process = os.popen(comand)
 			results = str(process.read())
-			return vermelho+t+azulresults
+			return vermelho+t+azul+results
 	except KeyboardInterrupt:
 		print('\n')
 		print(vermelho + '[*] Exiting...')
